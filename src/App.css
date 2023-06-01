@@ -4,3 +4,15 @@
   padding: 2rem;
   text-align: center;
 }
+
+.app-title {
+  font-size: 25px;
+}
+
+.app-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-block-end: 1.5em;
+}

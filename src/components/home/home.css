@@ -1,0 +1,12 @@
+.home__title {
+  margin-block-end: 1em;
+  color: var(--acc-clr);
+}
+
+.home__btn {
+  padding: 0.25em 1.5em;
+  border: none;
+  background-color: var(--sec-clr);
+  color: var(--pri-clr);
+  font-weight: 600;
+}

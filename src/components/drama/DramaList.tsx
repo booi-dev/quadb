@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
-import useApi from "../hook/useApi";
+import useApi from "../../hook/useApi";
+
+import { dramaDataType } from "../../type";
 
 import DramaCard from "./DramaCard";
 
-import dramaDataType from "../type";
-
-const DRAMAAPIURL = "https://api.tvmaze.com/search/shows?q=all";
-
 function DramaList() {
+  const DRAMA_API = "https://api.tvmaze.com/search/shows?q=all";
+
   const { data, loading, error } = useApi<
     {
       score: number;
       show: dramaDataType;
     }[]
-  >(DRAMAAPIURL);
+  >(DRAMA_API);
 
   const [dramaData, setDramaData] = useState<dramaDataType[]>([]);
 
@@ -26,8 +26,6 @@ function DramaList() {
       setDramaData(dataArray);
     }
   }, [data]);
-
-  console.log(data);
 
   if (loading) {
     return <div>Loading...</div>;

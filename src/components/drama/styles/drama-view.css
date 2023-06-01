@@ -1,0 +1,31 @@
+.drama-view__title {
+  font-weight: 300;
+  color: var(--acc-clr);
+}
+
+.drama-view__image {
+  width: 100%;
+  max-width: 250px;
+}
+
+.drama-view__summary,
+.drama-view__more-info {
+  width: 100%;
+  max-width: 350px;
+  margin-inline: auto;
+}
+
+.drama-view__more-info {
+  text-align: left;
+  margin-block-start: 0.5em;
+  padding-block: 0.5em;
+  padding-inline-start: 2em;
+  background-color: var(--sec-clr);
+  color: var(--pri-clr);
+}
+
+.drama-view__genres {
+  display: flex;
+  /* justify-content: center; */
+  gap: 0.5em;
+}

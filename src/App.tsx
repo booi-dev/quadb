@@ -1,13 +1,14 @@
 // import { useState } from "react";
+// import Drama from "./components/Drama";
+import Router from "./Router";
+
 import "./App.css";
-import Drama from "./components/Drama";
 
 function App() {
   return (
-    <>
-      <div>Quad B Tech</div>
-      <Drama />
-    </>
+    <div className="app">
+      <Router />
+    </div>
   );
 }
 

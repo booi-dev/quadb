@@ -1,3 +1,4 @@
-import { default as dramaDataType } from "./dramaDataType";
+import type dramaDataType from "./dramaDataType";
+import type dramaDetailType from "./dramaDetailType";
 
-export default dramaDataType;
+export type { dramaDataType, dramaDetailType };

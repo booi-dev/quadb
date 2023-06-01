@@ -1,0 +1,22 @@
+.go-home,
+.go-back-btn {
+  background-color: var(--sec-clr);
+  color: var(--pri-clr);
+  padding: 0.5em 1em;
+  border: none;
+}
+
+.go-home:hover,
+.go-back-btn:hover {
+  background-color: var(--acc-clr);
+}
+
+.go-home:active,
+.go-back-btn:active {
+  scale: 0.95;
+}
+
+.go-home:focus,
+.go-back-btn:focus {
+  outline: transparent;
+}
